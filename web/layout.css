@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Eras Demi ITC';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Eras Demi ITC'), url('erasdemi.woff') format('woff');
+}
+
+body {
+    font-family: 'Eras Demi ITC', sans-serif;
+    color: #333; 
+}
+
+main {
+    padding: 2em;
+}
+
+footer {
+   padding: 1em;
+   text-align: center;
+   background-color: #eee;
+   width: 100%;
+   position: fixed;
+   bottom: 0;
+}
+
+.colored {
+    color: #00657e;
+}
+
+a {
+    display: inline-block;
+    padding-left: 2.5em;
+    background-size: 1.5em;
+    background-repeat: no-repeat;
+    color: #00657e;
+}
+
+.icon-blog {
+    background-image: url('icon-blog.png');    
+}                                            
+.icon-github {
+    background-image: url('icon-github.png');    
+}
+.icon-twitter {
+    background-image: url('icon-twitter.png');    
+}
+.icon-stackoverflow {
+    background-image: url('icon-stackoverflow.png');    
+}
