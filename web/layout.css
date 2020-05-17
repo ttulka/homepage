@@ -9,7 +9,8 @@
 }
 
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -100,11 +101,11 @@ a:hover, a:active {
 @media (min-width: 40rem) {
 
     body {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .main {
-        min-height: calc(100vh - 6rem);
+        min-height: calc(100vh - 10rem); /* footer + margin */
         margin: 2rem 6rem;
     }
 
