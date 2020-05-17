@@ -1,51 +1,124 @@
-@font-face {
-  font-family: 'Eras Demi ITC';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Eras Demi ITC'), url('erasdemi.woff') format('woff');
+@import url('https://fonts.googleapis.com/css2?family=Mukta+Vaani:wght@400;700&display=swap');
+
+:root {
+    --primary: #00657e;
+    --secondary: #82b2cf;
+    --black: #111;
+    --white: #fff;
+    --lightgray: #e5e5e5;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Eras Demi ITC', sans-serif;
-    color: #333; 
+    color: var(--black, black);
+    background-color: var(--white, white);
+    font-family: 'Mukta Vaani', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-main {
-    padding: 2em;
-    min-height: calc(100vh - 3.2em);
+a {
+    text-decoration: none;
+    color: var(--primary, darkblue);
+}
+a:hover, a:active {
+    text-decoration: underline;
 }
 
-footer {
-   padding-top: 1em;
+.main {
+    padding: 1rem;
+    min-height: calc(100vh - 3.5rem);
+}
+
+.greet {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.heading {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-top: 0;
+}
+.heading strong {
+    color: var(--primary, darkblue); 
+}
+
+.card {
+    border: 1px solid var(--lightgray, silver);
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.list {
+    margin: 2rem;
+    padding: 0;
+}
+
+.list__item {
+    display: block;
+    border-bottom: 1px solid var(--lightgray, silver);
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem;
+    padding-left: 2.5rem;
+    list-style: none;
+    background-size: 1.2rem;
+    background-repeat: no-repeat;
+    background-position-y: 0.2rem;
+}
+.list__item:last-child {
+    border: 0;
+    padding-bottom: 0;
+}
+.list__item.icon-blog {
+    background-image: url('icon-blog.png');
+}                                            
+.list__item.icon-github {
+    background-image: url('icon-github.png');    
+}
+.list__item.icon-twitter {
+    background-image: url('icon-twitter.png');    
+}
+.list__item.icon-stackoverflow {
+    background-image: url('icon-stackoverflow.png');    
+}
+
+.footer {
    text-align: center;
    background-color: #eee;
    width: 100%;
-   height: 3.2em;
+   height: 3.5rem;
+   line-height: 3.5rem;
    bottom: 0;
    vertical-align: middle;
 }
 
-.colored {
-    color: #00657e;
-}
+@media (min-width: 40rem) {
 
-a {
-    display: inline-block;
-    padding-left: 2.5em;
-    background-size: 1.5em;
-    background-repeat: no-repeat;
-    color: #00657e;
-}
+    body {
+        font-size: 1.5em;
+    }
 
-.icon-blog {
-    background-image: url('icon-blog.png');    
-}                                            
-.icon-github {
-    background-image: url('icon-github.png');    
-}
-.icon-twitter {
-    background-image: url('icon-twitter.png');    
-}
-.icon-stackoverflow {
-    background-image: url('icon-stackoverflow.png');    
+    .main {
+        min-height: calc(100vh - 6rem);
+        padding: 2rem 3rem;
+    }
+
+    .card {
+        margin: 2rem 0;
+    }
+
+    .list__item {
+        background-size: 1.9rem;
+        padding-left: 3.2rem;
+    }
+
+    .footer {
+        height: 6rem;
+        line-height: 6rem;
+    }
 }
