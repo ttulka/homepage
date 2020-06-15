@@ -90,6 +90,9 @@ a:hover, a:active {
 .list__item.icon-stackoverflow {
     background-image: url('icon-stackoverflow.png');    
 }
+.list__item.icon-medium {
+    background-image: url('icon-medium.png');    
+}
 
 .footer {
    text-align: center;
