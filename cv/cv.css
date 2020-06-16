@@ -50,7 +50,8 @@ h3 span {
     font-family: 'Mukta Vaani', sans-serif;
     margin: auto;
     padding: 1rem;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 .header__image {
@@ -85,10 +86,14 @@ h3 span {
 
 @media print, screen and (min-width: 45rem) {
     .header {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
     .header__image {
-        flex: 0 0 10rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 10rem;
+                flex: 0 0 10rem;
     }
     .header__image img {
         height: 7rem;
@@ -108,8 +113,13 @@ h3 span {
     }
 
     .main {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: row-reverse;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse;
     }
 
     .main__article {
@@ -119,7 +129,9 @@ h3 span {
     }
     
     .main__aside {
-        flex: 0 0 10rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 10rem;
+                flex: 0 0 10rem;
     }
     .main__aside__section {
         padding-right: 1rem;
@@ -148,10 +160,14 @@ h3 span {
         padding: 0 2rem 3rem 2rem;
     }
     .main__aside {
-        flex: 0 0 15rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 15rem;
+                flex: 0 0 15rem;
     }
     .header__image {
-        flex: 0 0 15rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 15rem;
+                flex: 0 0 15rem;
     }
     .header__image img {
         height: 9rem;
@@ -185,7 +201,9 @@ h3 span {
     }
     
     .header__image {
-        flex: 0 0 8rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 8rem;
+                flex: 0 0 8rem;
     }
     .header__image img {
         height: 5rem;
@@ -204,14 +222,16 @@ h3 span {
     }
 
     .main__aside {
-        flex: 0 0 8rem;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 8rem;
+                flex: 0 0 8rem;
     }
     .main__aside__section {
         padding-right: 1rem;
     }
     
     .main__article {
-        padding: 0 0 1rem 1rem;
+        padding: 0 1rem 1rem 1rem;
         border-radius: 0.5rem;
     }
 }
