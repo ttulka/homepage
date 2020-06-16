@@ -29,6 +29,7 @@ h1, h2, h3 {
 h1, h2 {
     letter-spacing: 1px;
     text-transform: uppercase;
+    margin-top: 2rem;
 }
 h3 span {
     display: inline-block;
@@ -195,6 +196,9 @@ h3 span {
     h2 {
         font-size: 120%;
     }
+    h2:not(:first-of-type) {
+        margin-top: 1rem;
+    }
 
     .body {
         padding: 0;
@@ -231,7 +235,7 @@ h3 span {
     }
     
     .main__article {
-        padding: 0 1rem 1rem 1rem;
+        padding: 0 1rem 0.5rem 1rem;
         border-radius: 0.5rem;
     }
 }
