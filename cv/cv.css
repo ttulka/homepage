@@ -84,6 +84,9 @@ h3 span {
     text-transform: uppercase;
 }
 
+.main__article__additional ul {
+    padding-inline-start: 1.2em;
+}
 
 @media print, screen and (min-width: 45rem) {
     .header {
@@ -237,5 +240,8 @@ h3 span {
     .main__article {
         padding: 0 1rem 0.5rem 1rem;
         border-radius: 0.5rem;
+    }
+    .main__article__additional {
+        display: none;
     }
 }
